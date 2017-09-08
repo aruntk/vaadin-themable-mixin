@@ -8,7 +8,7 @@
    */
   Vaadin.ThemableMixin = superClass => class VaadinThemableMixin extends superClass {
 
-    static get template() {
+    get template() {
       if (super.template && !this.hasOwnProperty('_memoizedThemableMixinTemplate')) {
         this._memoizedThemableMixinTemplate = super.template.cloneNode(true);
 
